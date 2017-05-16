@@ -1,4 +1,7 @@
-var Tarea = function (descripcion) {
-  this.descripcion = descripcion || '';
-};
+class Tarea {
 
+	constructor(descripcion) {
+		this.descripcion = descripcion || ''
+	}
+
+}

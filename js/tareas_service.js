@@ -1,22 +1,26 @@
-tareasListApp.service("TareasService", function () {
+class TareasService {
 
-  this.tareasIds = 0;
-  this.tareas = [];
-
-  this.crearTarea = function (description) {
+  constructor() {
+    this.tareasIds = 0;
+    this.tareas = [];  
+  }
+  
+  crearTarea(description) {
     var tarea = new Tarea(description);
     tarea.id = this.tareasIds++;
     return tarea;
-  };
+  }
 
-  this.agregarTarea = function (tarea) {
+  agregarTarea(tarea) {
     this.tareas.push(tarea);
-  };
+  }
 
-  this.getTareaById = function (id) {
-    return _.find(this.tareas, function (tarea) {
+  getTareaById(id) {
+    return this.tareas.find((tarea) => {
       return tarea.id == id;
     })
-  };
+  }
 
-});
+}
+
+tareasListApp.service("TareasService", TareasService); 
