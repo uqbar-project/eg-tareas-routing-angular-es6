@@ -6,7 +6,7 @@ class TareasService {
   }
   
   crearTarea(description) {
-    var tarea = new Tarea(description)
+    let tarea = new Tarea(description)
     tarea.id = this.tareasIds++
     return tarea
   }

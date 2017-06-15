@@ -1,7 +1,7 @@
 'use strict';
 
 /* Controllers */
-var tareasListApp = angular.module('tareasListApp', ['ui.router']);
+let tareasListApp = angular.module('tareasListApp', ['ui.router']);
 
 AgregarTareaController.$inject = ['TareasService']
 tareasListApp.controller('AgregarTareaController', AgregarTareaController)

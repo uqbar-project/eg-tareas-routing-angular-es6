@@ -7,7 +7,7 @@ class AgregarTareaController {
   }
   
   agregarTarea() {
-    var tarea = this.tareasService.crearTarea(this.descripcionTarea)
+    let tarea = this.tareasService.crearTarea(this.descripcionTarea)
     this.tareasService.agregarTarea(tarea)
     this.descripcionTarea = ''
   }

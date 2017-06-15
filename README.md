@@ -8,5 +8,5 @@ Es una lista de tareas donde para editarla debés cambiar la vista de tu aplicac
 
 Hay dos versiones:
 
-* fresh/: una versión inicial para hacer el taller
-* trunk/: la version completa
+* fresh/: una versión inicial para hacer el taller (PENDIENTE)
+* master/: la version completa
