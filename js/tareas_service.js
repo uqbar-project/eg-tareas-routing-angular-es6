@@ -22,5 +22,3 @@ class TareasService {
   }
 
 }
-
-tareasListApp.service("TareasService", TareasService) 

@@ -1,10 +1,6 @@
-'use strict';
-
-/* Controllers */
-let tareasListApp = angular.module('tareasListApp', ['ui.router']);
-
-AgregarTareaController.$inject = ['TareasService']
-tareasListApp.controller('AgregarTareaController', AgregarTareaController)
-
-EditarTareaController.$inject = ['$stateParams', '$state', 'TareasService']
-tareasListApp.controller('EditarTareaController', EditarTareaController)
+angular.module('tareasListApp', ['ui.router'])
+    .service("TareasService", TareasService)
+    .controller('AgregarTareaController', AgregarTareaController)
+    .controller('EditarTareaController', EditarTareaController)
+    .config(routes)
+    

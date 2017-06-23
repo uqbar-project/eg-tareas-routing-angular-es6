@@ -1,4 +1,4 @@
-tareasListApp.config(function ($stateProvider, $urlRouterProvider) {
+const routes = ($stateProvider, $urlRouterProvider) => {
 
   $urlRouterProvider.otherwise("/");
 
@@ -16,4 +16,4 @@ tareasListApp.config(function ($stateProvider, $urlRouterProvider) {
       controller: "EditarTareaController as editarCtrl"
     })
 
-});
+}
