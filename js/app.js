@@ -1,4 +1,3 @@
-/* Controllers */
-let tareasListApp = angular.module('tareasListApp', [])
+angular.module('tareasListApp', [])
 
 
